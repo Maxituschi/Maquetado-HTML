@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Proyecto HTML</title>
+  <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+  <script src="https://kit.fontawesome.com/08fcf48a92.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+  <script type="text/javascript" src="assets/css/java.js"> </script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+
+<body>
+
+
+  <!--para descargar el archivo en pdf
+  <a href="..." download="..."-->
+
+
+  <!--Le agregue fixed top para que la navbar quede en su lugar cuando bajemos-->
+  <nav class="navbar bg-primary fixed-top>
+      
+        <div> class=" container-fluid">
+    <a class="navbar-brand" href="#">
+      <img src="assets/img/APLogo-20-20.png" alt="..." width="30%" height="20%">
+    </a>
+
+    <ul class="list-group list-group-horizontal">
+      <li class="list-group-item"><i class="fa-brands fa-facebook fa-2xl"></i></li>
+      <li class="list-group-item"><i class="fa-brands fa-twitter fa-2xl"></i></li>
+      <li class="list-group-item"><i class="fa-brands fa-linkedin fa-2xl"></i></li>
+      <!-- button triger modal -->
+      <li class="list-group-item">
+        <i class="fa-solid fa-user-lock fa-lg" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
+
+        </i>
+      </li>
+    </ul>
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Login</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="mb-3 row">
+              <label for="staticEmail" class="col-sm-2 col-form-label">Email</label>
+              <div class="col-sm-10">
+                <input type="text" class="form-control-plaintext" id="staticEmail" value="email@ejemplo.com">
+              </div>
+            </div>
+            <div class="mb-3 row">
+              <label for="inputPassword" class="col-sm-2 col-form-label">Contraseña</label>
+              <div class="col-sm-10">
+                <input type="password" class="form-control" id="inputPassword">
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary">Iniciar sesion</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </nav>
+
+  <section id="sobre-mi" class="info">
+    <div class="container-fluid text-center">
+
+      <div class="row">
+
+        <div class="col-3">
+          <img src="assets/img/foto perfil.jpg" class="rounded-circle w-75" alt="..." title="...">
+          <h2>Maximiliano N.</h2>
+          <h2>Tuschi</h2>
+        </div>
+
+        <div class="col-8 mt-4">
+          <h5 class="informacion ms-auto me-auto">Sobre mí</h5>
+
+            <p>Me llamo Maximiliano, tengo 39 años, actualmente me encuentro
+              trabajando como supervisor de poliducto en YPF, me decidi a realizar este curso para progresar dentro de la
+              compania, mi lugar de trabajo esta hubicado en la terminal de Junin, Bs As.</p>
+        </div>
+
+        <div class="col-1">
+        <button id="btn1" class="btn btn-info"><i class="fa-solid fa-pencil"></i></button>
+      </div>
+      </div>
+
+    </div>
+    </div>
+  </section>
+  
+  <section id="experiencia" class="experiencia">
+    
+    <div class="contenedor-fluid">
+      <div class="row">
+
+    <div class="col-2">
+      logo trabajo
+    </div>
+
+    <div class="col-8">
+      <div>
+      <h4>Experiencia</h4>
+      <h6>YPF</h6>
+      <p>Septiembre 2011 - Actualidad</p>
+      <h6>HASA</h6>
+      <P>Octubre 2006 - Septiembre 2011</P>
+      <h6>Instalaciones electricas domiciliarias</h6>
+      <P>Desde 2001 - Hasta 2006</P>
+
+    </div>
+    </div>
+
+    <div class="col-1 mt-0">
+      <button id="btn_edu_1" class="btn btn-info"><i class="fa-solid fa-pencil"></i></button>
+      <button id="btn_edu_1" class="btn btn-info"><i class="fa-solid fa-trash-can"></i></button>
+    </div>
+
+     <div class="col-1 mt-0">
+      <button id="btn_edu_1" class="btn btn-info"><i class="fa-solid fa-plus"></i></button>
+     </div>
+
+    </div>
+  </div>
+    
+  </section>
+
+  <section id="educacion" class="educacion">
+    <div class="contenedor-fluid">
+    <div class="row">
+
+             <div class="col-2">
+  
+<p>escudo de la institucion</p>
+
+</div>
+             <div class="col-8">
+  <div>
+      <h4>Educacion</h4>    
+
+      <h6>Argentina Programa</h6>
+      <p>Desarrollador Junieor<br>
+      Noviembre 2021 - Actualidad</p>
+
+      <h6>Licenciado en Seguridad e Higiene en el Trabajo</h6>
+      <P>Octubre 2006 - Septiembre 2012</P>
+
+      <h6>Profesor en Electronica</h6>
+      <P>Desde 2001 - Hasta 2005</P>
+      
+      <h6>Escuela Tecnica N° 1</h6>
+      <P>Octubre 1996 - Septiembre 2001</P>
+
+    </div>
+</div>           
+
+       <div class="col-1 mt-0">
+
+  <!--Primer par de botones-->
+  <button id="btn_edu_1" class="btn btn-info"><i class="fa-solid fa-pencil"></i></button>
+  <button id="btn_edu_1" class="btn btn-info"><i class="fa-solid fa-trash-can"></i></button>
+  <br>
+  <!--Segundo par de botones-->
+  <button id="btn_edu_1" class="btn btn-info"><i class="fa-solid fa-pencil"></i></button>
+  <button id="btn_edu_1" class="btn btn-info"><i class="fa-solid fa-trash-can"></i></button>
+       </div>
+
+       <div class="col-1 mt-0">
+  <!--Primer par de botones-->
+  <button id="btn_edu_1" class="btn btn-info"><i class="fa-solid fa-plus"></i></button> 
+          
+  <!--Segundo par de botones--> 
+  
+  
+  
+
+       </div>
+    </div>
+  </div> 
+   
+  </section>
+
+  <section id="Hard Skills and Soft Skills" class="Hard_Skills_and_Soft_Skills">
+
+  <div class="contenedor-fluid">
+    <div class="row">
+
+        <div class="col-2">
+        </div>
+
+        <div class="col-8">
+          <h4>Hard Skills and Soft Skill</h4>
+                    
+          <div class="progress">
+          <div class="progress-bar w-75" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+
+         <br>
+          
+          <div class="progress">
+          <div class="progress-bar w-75" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>        
+        </div> 
+        
+        <div class="col-1 mt-0">
+
+          <!--Primer par de botones-->
+          <button id="btn_edu_1" class="btn btn-info"><i class="fa-solid fa-pencil"></i></button>
+          <button id="btn_edu_1" class="btn btn-info"><i class="fa-solid fa-trash-can"></i></button>
+          <br>
+          <!--Segundo par de botones-->
+          <button id="btn_edu_1" class="btn btn-info"><i class="fa-solid fa-pencil"></i></button>
+          <button id="btn_edu_1" class="btn btn-info"><i class="fa-solid fa-trash-can"></i></button>
+        </div>
+
+         <div class="col-1 mt-0">
+          <!--Primer par de botones-->
+          <button id="btn_edu_1" class="btn btn-info"><i class="fa-solid fa-plus"></i></button> 
+                  
+          <!--Segundo par de botones--> 
+          
+          
+          
+        
+        </div>
+
+    </div>
+
+  </div>
+  </section>
+ 
+    <section id="proyectos" class="proyectos">
+      <div class="content-fluid">
+      <div class="row">
+
+      <div class="col-2">
+      </div>
+
+      <div class="col-8">
+        <h4>Proyectos</h4>
+        <h6>Ver que poner</h6>
+        <P>blablablabalabalabal.......</P>
+        <h6>Ver que poner</h6>
+        <P>blablablabalabalabal.......</P>      
+      </div>
+
+      <div class="col-1 mt-0">
+
+        <!--Primer par de botones-->
+        <button id="btn_edu_1" class="btn btn-info"><i class="fa-solid fa-pencil"></i></button>
+        <button id="btn_edu_1" class="btn btn-info"><i class="fa-solid fa-trash-can"></i></button>
+        <br>
+        <!--Segundo par de botones-->
+        <button id="btn_edu_1" class="btn btn-info"><i class="fa-solid fa-pencil"></i></button>
+        <button id="btn_edu_1" class="btn btn-info"><i class="fa-solid fa-trash-can"></i></button>
+      </div>
+
+       <div class="col-1 mt-0">
+        <!--Primer par de botones-->
+        <button id="btn_edu_1" class="btn btn-info"><i class="fa-solid fa-plus"></i></button> 
+                
+        <!--Segundo par de botones--> 
+        
+        
+        
+      
+      </div>
+
+      </div>
+
+</div>
+
+    </section>
+
+
+    <!-- JavaScript Bundle with Popper -->
+    
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+      crossorigin="anonymous"></script>
+       
+    <!-- Para animar utilizamos Jquery y JS
+    <script>
+      $("#btn1").click(function () {
+        var progreso = 0;
+        var intervalo = setInterval(function () {
+
+          progreso = progreso + 50;
+
+          $("#barra").css("width", progreso + "%").attr("aria-valuenow", progreso).text(progreso + "%");
+          if (progreso >= 100) {
+            clearInterval(intarvalo);
+          }
+          /estos 100 son los milisegundos de llenado de la barra/
+        }, 100);
+
+      });
+
+    </script>-->
+</body>
+
+</html>
